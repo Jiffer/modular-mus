@@ -1,0 +1,40 @@
+#N canvas 688 160 450 370 10;
+#X obj 47 107 inlet~;
+#X obj 86 208 moog~;
+#X obj 49 282 outlet~;
+#X obj 101 114 cnv 15 120 55 empty empty empty 20 12 0 14 -191407 -66577
+0;
+#X obj 183 131 knob 32 32 0 4 0 0 empty empty Q 0 -9 0 10 -162280 -4160
+-66577 0 1;
+#X obj 137 132 knob 32 32 100 10000 0 0 empty empty cutoff 0 -9 0 10
+-191407 -260097 -33289 0 1;
+#X obj 106 125 tgl 25 0 empty empty empty 17 7 0 10 -228856 -155649
+-1 0 1;
+#X obj 88 77 inlet;
+#X obj 192 81 inlet;
+#X obj 137 48 inlet;
+#X obj 260 84 loadbang;
+#X msg 261 129 2.5;
+#X msg 239 110 6000;
+#X obj 49 233 mm-bypass~;
+#X text 58 60 Toggle on/off;
+#X text 33 89 audio in;
+#X text 106 29 low pass cut-off;
+#X text 187 52 Q-factor (resonance);
+#X text 279 105 initialization;
+#X text 34 -1 Resonant Low Pass Filter (rlp);
+#X connect 0 0 1 0;
+#X connect 0 0 13 0;
+#X connect 1 0 13 1;
+#X connect 4 0 1 2;
+#X connect 5 0 1 1;
+#X connect 6 0 13 2;
+#X connect 7 0 6 0;
+#X connect 8 0 4 0;
+#X connect 9 0 5 0;
+#X connect 10 0 11 0;
+#X connect 10 0 12 0;
+#X connect 11 0 4 0;
+#X connect 12 0 5 0;
+#X connect 13 0 2 0;
+#X coords 0 -1 1 1 120 70 1 100 100;
