@@ -1,0 +1,30 @@
+#N canvas 507 187 676 490 12;
+#X obj 58 -482 mm-vco~;
+#X obj 144 -313 cnv 17 3 25 empty empty 0 5 9 0 16 -228856 -162280
+0;
+#X obj 65 -322 cnv 3 400 3 empty \$0-pddp.cnv.inlets inlets 8 12 0
+13 -228856 -1 0;
+#X obj 144 -280 cnv 17 3 25 empty empty 1 5 9 0 16 -228856 -162280
+0;
+#X obj 144 -249 cnv 17 3 25 empty empty 2-6 5 9 0 16 -228856 -162280
+0;
+#X text 181 -251 float;
+#X text 66 -371 mm-vco~;
+#X text 143 -371 "voltage controlled oscillator" - waveform generator
+;
+#X text 234 -281 Glide / portamento time;
+#X text 164 -314 float;
+#X text 164 -281 float;
+#X text 147 -351 enable/disable waveforms with toggle boxes;
+#X text 234 -250 waveform toggle (sin \, triangle \, square \, sawtooth
+\, noise);
+#X obj 65 -221 cnv 3 400 3 empty \$0-pddp.cnv.inlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 144 -213 cnv 17 3 25 empty empty 0 5 9 0 16 -228856 -162280
+0;
+#X text 164 -214 signal;
+#X text 234 -214 Audio output;
+#X text 234 -314 Frequency (Hz) (no effect on noise);
+#X obj 16 -559 cnv 15 600 50 empty empty modular-mus_waveform_generator
+20 12 0 18 -183872 -66577 0;
+#X text 40 -537 "voltage controlled oscillator" sound generator;
