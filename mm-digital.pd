@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #N canvas 751 90 389 434 10;
 #X text 98 92 input data;
 #X obj 154 331 outlet;
@@ -41,3 +42,26 @@
 #X connect 19 0 17 0;
 #X connect 19 1 16 1;
 #X coords -1 -1 1 1 100 40 1 100 200;
+=======
+#N canvas 342 77 791 621 10;
+#X text 98 102 input data;
+#X obj 101 273 outlet;
+#X obj 102 119 r D\$1;
+#X obj 169 273 outlet;
+#X obj 102 179 sel 1 0;
+#X obj 102 234 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 162 234 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 98 291 bang on 1;
+#X text 169 292 bang on 0;
+#X obj 102 217 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X connect 2 0 4 0;
+#X connect 2 0 9 0;
+#X connect 4 0 1 0;
+#X connect 4 0 5 0;
+#X connect 4 1 3 0;
+#X connect 4 1 6 0;
+#X coords -1 -1 1 1 80 50 1 100 200;
+>>>>>>> 0bd893185eb46bd9bc22339b0c33e6401139ca1c
