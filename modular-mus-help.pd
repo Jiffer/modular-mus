@@ -10,8 +10,7 @@
 #X obj 84 2207 mm-filter~;
 #X obj 92 843 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 81 628 mm-digital 0;
-#X obj 83 1004 mm-vco~;
+#X obj 81 629 mm-digital 0;
 #X obj 80 1281 cnv 15 600 50 empty empty Sound_Control 20 12 0 18 -261269
 -66577 0;
 #X obj 72 -77 cnv 15 600 50 empty empty modular-mus 20 12 0 18 -183872
@@ -156,9 +155,6 @@ will be sent to all modular-mus interface objects (see below);
 #X connect 24 0 30 0;
 #X connect 25 0 30 0;
 #X restore 247 64 pd mm-test-connections;
-#X text 260 624 mm-digital: digital input object. Use to read inputs
-from the digital pins. Use with digital modules such as buttons and
-switches. See help for more info.;
 #X text 258 711 mm-analog: analog input object. Use to read inputs
 form the analog pins. Use with analog modules including knobs \, sliders
 \, distance and light sensors. See help for more info.;
@@ -204,6 +200,10 @@ Generator;
 #X text 711 1684 16 step sequencer;
 #X obj 84 1344 mm-gain~;
 #X obj 82 1691 mm-seq 30 50;
+#X obj 83 1004 mm-vco~;
+#X text 260 624 mm-digital: digital input object. Use to read inputs
+from the digital pins. Use with digital modules such as buttons and
+switches. See help for more info.;
 #X connect 3 0 2 0;
 #X connect 8 0 2 0;
 #X coords 0 756 1 755 150 110 0;
