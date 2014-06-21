@@ -306,7 +306,7 @@
 #X connect 17 0 15 0;
 #X restore 104 68 pd auto-open;
 #X obj 162 154 tgl 25 0 empty empty connected 0 32 0 10 -176094 -13381
--1 1 1;
+-1 0 1;
 #X obj 134 153 bng 25 250 50 0 empty empty scan 0 32 0 10 -262144 -1
 -1;
 #N canvas 146 163 525 433 serin 0;
@@ -364,7 +364,7 @@
 #X obj 104 153 bng 25 250 50 0 empty empty list 0 32 0 10 -262144 -1
 -1;
 #X msg 82 216 devices;
-#X msg 258 160 0;
+#X msg 161 216 0;
 #X text -45 402 analog inputs;
 #X text 121 407 digital inputs;
 #X floatatom 444 -68 5 0 0 0 - - -;
