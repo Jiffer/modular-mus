@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #N canvas 99 22 998 756 12;
 #X obj 74 -21 modular-mus;
 #X obj 81 715 mm-analog 0;
@@ -208,70 +207,3 @@ Generator;
 #X connect 3 0 2 0;
 #X connect 8 0 2 0;
 #X coords 0 756 1 755 150 110 0;
-=======
-#N canvas 61 70 1024 572 10;
-#X obj 61 -22 modular-mus;
-#X obj 189 161 r A0;
-#X floatatom 189 184 5 0 0 0 - - -;
-#X obj 189 242 r D2;
-#X obj 189 261 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 640 247 s D3~;
-#X obj 618 207 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X text 239 -28 modular-mus - scan and automatically open first arduino
-found - configures analog ports A0-A7 for analog input - configures
-all PWM compatible pins as PWM output (3 \, 5 \, 6 \, 9 \, 10 \, 11)
-- configures rest of digital IO as digital input (2 \, 4 \, 7 \, 8
-\, 12 \, 13);
-#X floatatom 707 220 5 0 1 0 - - -;
-#X text 707 181 pwm out;
-#X obj 712 201 hsl 100 15 0 1 0 0 empty empty empty -2 -8 0 10 -203904
--1 -1 0 1;
-#X text 593 188 digital out;
-#X obj 607 292 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 613 389 s D3~;
-#X floatatom 659 291 5 0 0 0 - - -;
-#X msg 646 359 0;
-#X msg 608 360 1;
-#X obj 608 314 metro 500;
-#X obj 630 335 pipe 40;
-#X obj 788 340 snapshot~ 20;
-#X obj 787 300 *~ 0.5;
-#X obj 787 319 +~ 0.5;
-#X obj 789 362 s D3~;
-#X floatatom 786 259 5 0 0 0 - - -;
-#X obj 838 318 metro 20;
-#X obj 838 260 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 60 129 mm-analog 0;
-#X obj 83 238 mm-digital 2;
-#X text 226 167 read Analog inputs with: [r A0] \, [r A1] \, [r A2]
-\, [r A3] \, [r A4] \, [r A5]...;
-#X text 233 255 read Digital inputs with [r D2] \, [r D4] \, [r D7]
-\, [r D8] \, [r D12] \, [r D13];
-#X text 594 137 write PWM / Digital outputs with [s D3~] \, [s D5~]
-\, [s D6~] \, [s D9~] \, [s D10~] \, [s D11~];
-#X text 862 255 sending an LFO signal out to pwm 3~;
-#X obj 787 279 osc~ 0.5;
-#X connect 1 0 2 0;
-#X connect 3 0 4 0;
-#X connect 6 0 5 0;
-#X connect 8 0 5 0;
-#X connect 10 0 8 0;
-#X connect 12 0 17 0;
-#X connect 14 0 17 1;
-#X connect 15 0 13 0;
-#X connect 16 0 13 0;
-#X connect 17 0 16 0;
-#X connect 17 0 18 0;
-#X connect 18 0 15 0;
-#X connect 19 0 22 0;
-#X connect 20 0 21 0;
-#X connect 21 0 19 0;
-#X connect 23 0 32 0;
-#X connect 24 0 19 0;
-#X connect 25 0 24 0;
-#X connect 32 0 20 0;
->>>>>>> 0bd893185eb46bd9bc22339b0c33e6401139ca1c
