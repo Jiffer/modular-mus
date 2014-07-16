@@ -4,14 +4,14 @@
 #X obj 82 862 mm-out 0;
 #X obj 85 825 hsl 100 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 84 2125 mm-reverb~;
-#X obj 85 2040 mm-overdrive~;
-#X obj 85 2286 mm-tremolo~;
-#X obj 84 2207 mm-filter~;
+#X obj 84 2215 mm-reverb~;
+#X obj 85 2130 mm-overdrive~;
+#X obj 85 2376 mm-tremolo~;
+#X obj 84 2297 mm-filter~;
 #X obj 92 843 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 81 629 mm-digital 0;
-#X obj 80 1281 cnv 15 600 50 empty empty Sound_Control 20 12 0 18 -261269
+#X obj 80 1371 cnv 15 600 50 empty empty Sound_Control 20 12 0 18 -261269
 -66577 0;
 #X obj 72 -77 cnv 15 600 50 empty empty modular-mus 20 12 0 18 -183872
 -66577 0;
@@ -161,49 +161,63 @@ form the analog pins. Use with analog modules including knobs \, sliders
 #X text 258 850 mm-out: output object. Use to send signals to outputs
 to digital and PWM outputs. Use with output modules such as LEDs and
 motor boards. See help for more info.;
-#X text 258 1338 mm-gain~;
-#X text 338 1338 volume control and mute.;
+#X text 258 1428 mm-gain~;
+#X text 338 1428 volume control and mute.;
 #X text 174 107 open;
 #X msg 282 131 open 23;
 #X text 344 129 to open port 23;
 #X text 244 108 open command to pduino object \,;
 #X text 244 129 i.e.;
-#X text 257 1454 mm-mix2~;
-#X text 334 1454 mix 2 audio signals;
+#X text 257 1544 mm-mix2~;
+#X text 334 1544 mix 2 audio signals;
 #X text 338 997 mm-vco~;
 #X text 415 997 "voltage controlled oscillator" - waveform generator
 ;
 #X text 419 1017 enable/disable waveforms with toggle boxes;
-#X text 347 1514 mm-adsr~;
-#X text 424 1514 ADSR (Attack \, Decay \, Sustain \, Release) Envelope
+#X text 347 1604 mm-adsr~;
+#X text 424 1604 ADSR (Attack \, Decay \, Sustain \, Release) Envelope
 Generator;
-#X text 352 1602 mm-lfo;
-#X text 422 1601 Low Frequency Oscillator - sinusoidal control signal
+#X text 352 1692 mm-lfo;
+#X text 422 1691 Low Frequency Oscillator - sinusoidal control signal
 ;
-#X obj 84 1898 cnv 15 600 50 empty empty Audio_effects 20 12 0 18 -261234
+#X obj 84 1988 cnv 15 600 50 empty empty Audio_effects 20 12 0 18 -261234
 -66577 0;
 #X obj 80 941 cnv 15 600 50 empty empty Sound_Generation 20 12 0 18
 -221154 -66577 0;
-#X text 119 1303 modular-mus audio control objects;
+#X text 119 1393 modular-mus audio control objects;
 #X text 133 965 modular-mus sound generation objects;
-#X obj 85 1954 mm-delay~;
+#X obj 85 2044 mm-delay~;
 #X obj 84 1093 mm-pwm~;
 #X text 338 1088 mm-pwm~;
 #X text 417 1087 pulse-width modulation oscillator;
 #X text 338 1176 mm-fm~;
 #X text 418 1176 frequency modulation synthesis;
 #X obj 85 1180 mm-fm~;
-#X obj 83 1463 mm-mix2~;
-#X obj 82 1520 mm-adsr~;
-#X obj 82 1606 mm-lfo 3 200 1000;
-#X text 621 1682 mm-seq;
-#X text 711 1684 16 step sequencer;
-#X obj 84 1344 mm-gain~;
-#X obj 82 1691 mm-seq 30 50;
+#X obj 83 1553 mm-mix2~;
+#X obj 82 1610 mm-adsr~;
+#X obj 82 1696 mm-lfo 3 200 1000;
+#X text 621 1772 mm-seq;
+#X text 711 1774 16 step sequencer;
+#X obj 84 1434 mm-gain~;
+#X obj 82 1781 mm-seq 30 50;
 #X obj 83 1004 mm-vco~;
 #X text 260 624 mm-digital: digital input object. Use to read inputs
 from the digital pins. Use with digital modules such as buttons and
 switches. See help for more info.;
+#X obj 86 1265 mm-pluck~;
+#X text 340 1262 mm-pluck~;
+#X text 421 1263 Plucked string model;
+#X text 355 2039 mm-delay~;
+#X text 355 2127 mm-overdrive~;
+#X text 355 2219 mm-reverb~;
+#X text 355 2307 mm-filter~;
+#X text 355 2377 mm-tremolo~;
+#X text 474 2040 audio delay with feedback;
+#X text 473 2218 artificial reverb (uses [freeverb~] object);
+#X text 470 2127 non-linear audio distortion (uses the [overdrive~]
+object);
+#X text 478 2308 resonant low pass filter;
+#X text 480 2377 LFO based volume automation;
 #X connect 3 0 2 0;
 #X connect 8 0 2 0;
 #X coords 0 756 1 755 150 110 0;

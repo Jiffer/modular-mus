@@ -1,11 +1,11 @@
-#N canvas 84 22 1059 756 12;
+#N canvas 84 22 1145 756 12;
 #X obj 14 29 modular-mus;
 #X obj 759 669 dac~;
 #X obj 760 198 mm-overdrive~;
 #X obj 255 357 mm-analog 1 40 64;
 #X obj 255 439 s fret;
 #X obj 17 437 s strum;
-#N canvas 47 136 1031 542 sixstrings 0;
+#N canvas 47 136 1031 542 sixstrings 1;
 #X obj 131 112 mtof;
 #X obj 50 45 > 1;
 #X obj 81 44 < 2;
@@ -73,10 +73,10 @@
 #X obj 603 210 r strum;
 #X obj 571 11 r strum;
 #X obj 94 505 outlet~;
-#X text -112 57 when the input becomes;
-#X text -112 89 than 2 the send one bang;
-#X text -112 72 greater than 1 AND less;
-#X text 161 21 initial string tuning;
+#X text -132 57 when the input becomes;
+#X text -132 89 than 2 the send one bang;
+#X text -132 72 greater than 1 AND less;
+#X text 157 11 initial string tuning;
 #X obj 206 92 r decay;
 #X obj 249 109 r bright;
 #X obj 466 88 r decay;
@@ -99,7 +99,9 @@
 #X obj 50 132 mm-pluck~;
 #X obj 568 132 mm-pluck~;
 #X obj 337 328 mm-pluck~;
-#X text 163 36 is loaded here;
+#X text 159 26 is loaded here;
+#X text 428 25 fifth;
+#X text 689 23 octave;
 #X connect 0 0 90 1;
 #X connect 1 0 3 0;
 #X connect 2 0 3 1;
@@ -200,7 +202,7 @@
 #X msg 760 61 30;
 #X obj 760 38 loadbang;
 #X obj 848 111 knob 32 32 400 5000 0 0 empty empty brightness 0 -8
-0 12 -262144 -1 -1 1900 1;
+0 12 -262144 -1 -1 0 1;
 #X msg 748 90 0.25;
 #X text 604 61 click for sustained ->;
 #X text 600 91 click for stacatto->;

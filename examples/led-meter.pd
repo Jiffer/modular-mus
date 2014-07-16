@@ -1,8 +1,8 @@
-#N canvas 310 110 759 589 10;
-#X obj 243 120 adc~;
-#X obj 243 452 mm-out 0;
-#X obj 265 402 mm-out 1;
-#X obj 288 353 mm-out 2;
+#N canvas 226 121 562 590 10;
+#X obj 214 120 adc~;
+#X obj 214 452 mm-out 0;
+#X obj 236 402 mm-out 1;
+#X obj 259 353 mm-out 2;
 #N canvas 910 293 450 300 meter 0;
 #X obj -21 -345 clip 0 1;
 #X obj 50 -316 clip 0 1;
@@ -42,17 +42,17 @@
 #X connect 17 0 16 1;
 #X connect 17 0 14 1;
 #X connect 17 0 12 1;
-#X restore 243 316 pd meter;
+#X restore 214 316 pd meter;
 #X obj 33 22 modular-mus;
-#X obj 288 279 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 259 279 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X text 316 286 enable / disable;
-#X obj 243 150 mm-gain~;
-#X text 217 23 led-meter.pd;
-#X text 221 52 Set brightness of 3 LEDs based on audio level coming
+#X text 287 286 enable / disable;
+#X obj 214 150 mm-gain~;
+#X text 188 23 led-meter.pd;
+#X text 192 52 Set brightness of 3 LEDs based on audio level coming
 in;
-#X text 241 100 audio input;
-#X text 221 67 Connect 3 LED objects to outputs 0 \, 1 and 2;
+#X text 212 100 audio input;
+#X text 192 67 Connect 3 LED objects to outputs 0 \, 1 and 2;
 #X connect 0 0 8 0;
 #X connect 4 0 1 0;
 #X connect 4 1 2 0;
