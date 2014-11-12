@@ -12,17 +12,20 @@
 #N canvas 583 374 691 259 tri~ 0;
 #X obj 114 112 triangle~;
 #X obj 114 85 phasor~;
-#X obj 114 162 outlet~;
+#X obj 114 188 outlet~;
 #X obj 114 59 inlet~;
 #X obj 176 58 inlet;
 #X obj 176 85 sig~ 0.5;
 #X text 243 53 Triangle wave patch first inlet is the frequency second
 inlet is peak-value-phase-offset (see triangle~ help);
-#X connect 0 0 2 0;
+#X obj 114 160 *~ 2;
+#X text 154 159 boost;
+#X connect 0 0 7 0;
 #X connect 1 0 0 0;
 #X connect 3 0 1 0;
 #X connect 4 0 5 0;
 #X connect 5 0 0 1;
+#X connect 7 0 2 0;
 #X restore 168 138 pd tri~;
 #X obj 136 209 *~;
 #X obj 170 208 *~;
@@ -91,12 +94,12 @@ inlet is peak-value-phase-offset (see triangle~ help);
 #X restore 192 187 pd select_oscillators;
 #X obj 192 259 outlet~;
 #X obj 110 135 knob 32 32 20 10000 1 0 empty empty freq -4 -10 0 12
--262144 -1 -1 1442 1;
+-262144 -1 -1 1246 1;
 #X obj 108 37 inlet;
 #X obj 197 38 inlet;
-#X obj 190 137 tgl 30 0 empty empty sin 0 -10 0 12 -262144 -1 -1 1
+#X obj 190 137 tgl 30 0 empty empty sin 0 -10 0 12 -262144 -1 -1 0
 1;
-#X obj 222 137 tgl 30 0 empty empty tri 0 -10 0 12 -262144 -1 -1 1
+#X obj 222 137 tgl 30 0 empty empty tri 0 -10 0 12 -262144 -1 -1 0
 1;
 #X obj 254 137 tgl 30 0 empty empty sqr 0 -10 0 12 -262144 -1 -1 0
 1;
@@ -111,7 +114,7 @@ inlet is peak-value-phase-offset (see triangle~ help);
 #X obj 327 36 inlet;
 #X obj 371 33 inlet;
 #X obj 150 135 knob 32 32 10 1000 1 0 empty empty glide -4 -10 0 12
--262144 -1 -1 237 1;
+-262144 -1 -1 658 1;
 #X obj 102 231 line~;
 #X msg 103 205 \$1 \$2;
 #X obj 102 179 pack;
